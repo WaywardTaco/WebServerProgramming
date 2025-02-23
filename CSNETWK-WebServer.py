@@ -42,7 +42,7 @@ while True:
         print("Error encountered")
         #Send response message for file not found
         #Fill in start
-        connectionSocket.send('404 Not Found'.encode())
+        connectionSocket.send('HTTP/1.0 404 Not Found'.encode())
         #Fill in end
        
         #Close client socket
